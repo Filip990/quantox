@@ -5,7 +5,7 @@ import Card from '../Card/Card';
 import { CardsList, Text } from './Cards.styled';
 
 const Cards = () => {
-  const cards = JSON.parse(localStorage.getItem('savedCards'));
+  const cards = JSON.parse(localStorage.getItem('cards'));
 
   return (
     <CardsList>

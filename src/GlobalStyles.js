@@ -3,6 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyle = createGlobalStyle`
   *:focus {
     outline: none;
+    box-sizing: border-box;
   }
 
   html,
