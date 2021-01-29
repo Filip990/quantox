@@ -1,22 +1,20 @@
-import { Link } from 'react-router-dom';
-
 import Button from '../Button/Button';
 import Card from '../Card/Card';
-import { CardsList, Text } from './Cards.styled';
+import { CardsList, CardLink, Text } from './Cards.styled';
 
 const Cards = () => {
-  const cards = JSON.parse(localStorage.getItem('savedCards'));
+  const cards = JSON.parse(localStorage.getItem('cards'));
 
   return (
     <CardsList>
-      <Link to="/cards/add">
+      <CardLink to="/cards/add">
         <Button>Add new card</Button>
-      </Link>
+      </CardLink>
       {cards && cards.length > 0 ? (
         cards.map(card => (
-          <Link to={`/cards/${card.id}/edit`}>
-            <Card key={card.number} {...card} />
-          </Link>
+          <CardLink key={card.cardNumber} to={`/cards/${card.id}/edit`}>
+            <Card {...card} />
+          </CardLink>
         ))
       ) : (
         <Text>No credit cards available</Text>

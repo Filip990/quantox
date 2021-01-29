@@ -3,6 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyle = createGlobalStyle`
   *:focus {
     outline: none;
+    box-sizing: border-box;
   }
 
   html,
@@ -14,7 +15,6 @@ const GlobalStyle = createGlobalStyle`
     font-size: 16px;
     line-height: 20px;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    overflow: hidden;
   }
 
   #app {
