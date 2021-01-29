@@ -15,7 +15,6 @@ const GlobalStyle = createGlobalStyle`
     font-size: 16px;
     line-height: 20px;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    overflow: hidden;
   }
 
   #app {

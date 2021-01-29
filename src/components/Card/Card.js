@@ -23,11 +23,10 @@ const Card = ({
 };
 
 Card.propTypes = {
-  id: PropTypes.number.isRequired,
-  cardNumber: PropTypes.number.isRequired,
+  cardNumber: PropTypes.string.isRequired,
   cardHolder: PropTypes.string.isRequired,
-  expirationMonth: PropTypes.number.isRequired,
-  expirationYear: PropTypes.number.isRequired,
+  expirationMonth: PropTypes.string.isRequired,
+  expirationYear: PropTypes.string.isRequired,
 }
 
 export default Card;

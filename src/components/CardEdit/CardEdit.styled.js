@@ -10,4 +10,7 @@ export const Form = styled.form`
 padding: 3em;
 `;
 
-export const Select = styled.select``;
+export const ErrorMessage = styled.span`
+  color: ffff00;
+  font-size: 0.75rem;
+`;
